@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+div {
+    display: inline-block;
+    width: 1200px;
+}
+
+/* The header and navigation menu */
+
+header nav{
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 60px;
+}
+
+li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+    font-size: 14px;
+}
+
+a:hover {
+    color:#03a9f4;
+}
+
+/* Article style */
+
+article {
+    display: inline-block;
+    width: 420px;
+    margin: 60px;
+    vertical-align: top;
+    line-height: 1.5;
+    text-align: left;
+}
+
+article img {
+    width: 420px;
+    height: 280px;
+}
+
+.p-ubuntu-style {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+
+h2 {
+    color: #626262;
+    font-style: 30px;
+    font-weight: 500;
+}
