@@ -10,9 +10,9 @@ body {
 
 /* The header and navigation menu */
 
-header nav{
+/* header nav{ 
     text-align: center;
-}
+}*/
 
 .menu li {
     display: inline-block;
@@ -35,7 +35,7 @@ a:hover {
 article {
     display: inline-block;
     width: 420px;
-    margin: 60px;
+    margin: 30px;
     vertical-align: top;
     line-height: 1.5;
     text-align: left;
@@ -54,7 +54,7 @@ article img {
 
 h2 {
     color: #626262;
-    font-style: 30px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -65,4 +65,18 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 70%;
+}
+
+/* Buton style */
+
+.lode-more-button{
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #626262;
+    padding: 15px 30px;
 }
