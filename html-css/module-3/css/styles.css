@@ -10,13 +10,9 @@ body {
 
 /* The header and navigation menu */
 
-/* header nav{ 
-    text-align: center;
-}*/
-
 .menu li {
     display: inline-block;
-    padding: 60px;
+    padding: 50px;
 }
 
 li > a {
