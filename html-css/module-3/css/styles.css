@@ -3,7 +3,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-div {
+.content-center {
     display: inline-block;
     width: 1200px;
 }
@@ -56,4 +56,13 @@ h2 {
     color: #626262;
     font-style: 30px;
     font-weight: 500;
+}
+
+.covered-image {
+    width: 420px;
+    height: 280px;
+    background-image: url(./../img/lifestyle-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 70%;
 }
