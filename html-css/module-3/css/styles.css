@@ -1,18 +1,44 @@
-body {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
+html {
+    box-sizing: border-box;
 }
 
-.content-center {
-    display: inline-block;
-    width: 1200px;
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Playfair Display", serif;
 }
 
 /* The header and navigation menu */
 
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header.container {
+    height: 192px;
+}
+
+.menu {
+    margin: 0;
+    padding: 72px 0;
+    font-size: 0;
+    text-align: center;
+}
+
 .menu li {
     display: inline-block;
-    padding: 50px;
+    width: 115px;
+    text-align: center;
+    margin-right: 85px;
+    margin-bottom: 19px;
+    line-height: 24px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
 }
 
 li > a {
@@ -22,13 +48,15 @@ li > a {
     font-size: 14px;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color:#03a9f4;
 }
 
 /* Article style */
 
-article {
+
+/* article {
     display: inline-block;
     width: 420px;
     margin: 30px;
@@ -61,13 +89,9 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 70%;
-}
+} */
 
 /* Buton style */
-
-.lode-more-button{
-    text-align: center;
-}
 
 button {
     display: inline-block;

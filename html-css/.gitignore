@@ -1,0 +1,9 @@
+# Ignore-list project files
+
+# Ignore files homework for module-1
+/module-1/*
+/module-4/*
+
+# Ignore Photoshop type file
+*.psd
+
