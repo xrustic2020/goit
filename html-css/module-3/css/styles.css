@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", sans-serif;
+    color: #626262;
 }
 
 /* The header and navigation menu */
@@ -53,7 +54,7 @@ a:focus {
     color:#03a9f4;
 }
 
-/* Article style */
+/* MAIN and Article style */
 
 main.container {
     font-size: 0;
@@ -63,11 +64,20 @@ article {
     display: inline-block;
     width: 420px;
     margin-right: 60px;
+    margin-bottom: 135px;
+    vertical-align: top;
 }
 
 article:nth-child(2n) {
     margin-right: 0;
 } 
+
+img {
+    display: block; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 30px;
+}
 
 .p-ubuntu-style {
     font-size: 14px;
@@ -75,34 +85,23 @@ article:nth-child(2n) {
     color: rgb(180, 173, 158);
     text-transform: uppercase;
     line-height: 17px;
-}
-      
-/*
-article img {
-    width: 420px;
-    height: 280px;
+    font-weight: 300;
 }
 
-.p-ubuntu-style {
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    color: #b4ad9e;
-}
-
-h2 {
-    color: #626262;
+article h2 {
     font-size: 30px;
-    font-weight: 500;
+    line-height: 36px;
+    font-weight: 400;
 }
 
-.covered-image {
-    width: 420px;
-    height: 280px;
-    background-image: url(./../img/lifestyle-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 70%;
-} */
+h2 + p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+article:nth-child(-n + 2) {
+    margin-bottom: 52px;
+}
 
 /* Buton style */
 
