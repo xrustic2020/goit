@@ -55,16 +55,29 @@ a:focus {
 
 /* Article style */
 
-
-/* article {
-    display: inline-block;
-    width: 420px;
-    margin: 30px;
-    vertical-align: top;
-    line-height: 1.5;
-    text-align: left;
+main.container {
+    font-size: 0;
 }
 
+article {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+}
+
+article:nth-child(2n) {
+    margin-right: 0;
+} 
+
+.p-ubuntu-style {
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 17px;
+}
+      
+/*
 article img {
     width: 420px;
     height: 280px;
