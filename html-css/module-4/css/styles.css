@@ -151,3 +151,20 @@ nav {
   padding: 4px 0;
   text-align: center;
 }
+
+.handbag {
+  width: 255px;
+  height: 320px;
+  background-image: url(../img/handbag2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.glasses {
+  width: 255px;
+  height: 320px;
+  background-image: url(../img/glasses.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+  
