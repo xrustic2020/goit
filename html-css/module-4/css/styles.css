@@ -87,65 +87,67 @@ nav {
 }
 
 /*
-nav {
-  text-transform: uppercase;
   height: auto;
   overflow: hidden;
-}
-
-nav a {
-  display: block;
-}
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
+*/
+  
+/* Gallery section */
 
-.logo {
-  width: 190px;
-  float: left;
+.line-effect::after {
+  content: "";
+  height: auto;
+  background-image: url(../img/line.jpg);
 }
 
-.logo a {
+.featured {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.features-list {
+  width: 255px;
+  font-size: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  color: #555252;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
   line-height: 32px;
   letter-spacing: -0.02em;
-  text-decoration: none;
+  background-color: #e9f0fd;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
-.logo a::first-letter {
-  font-weight: 900;
-  color: #1abc9c;
+.features-list:nth-child(4n) {
+  margin-right: 0;
 }
 
-.main-menu {
-  width: 494px;
-  list-style: none;
-  height: auto;
-  overflow: hidden;
-  text-align: right;
-  margin-left: 190px;
+.features-list h3 {
+  font-size: 18px;
+  background-color: #323232;
+  display: inline-block;
+  width: 200px;
+  padding: 4px 0 4px 13px;
 }
 
-.main-menu li {
-  float: right;
-}
-  
-.main-menu a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: #0f0101;
-  line-height: 11px;
-  letter-spacing: -0.02em;
+.features-list p::before {
+  content: "\0024";
 }
 
-.main-menu a:hover {
-  color: #1abc9c;
-} */
-  
+.features-list p {
+  font-size: 18px;
+  display: inline-block;
+  width: 55px;
+  background-color: #8c8c8c;
+  padding: 4px 0;
+  text-align: center;
+}
