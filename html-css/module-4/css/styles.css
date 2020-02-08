@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block; 
+  max-width: 100%; 
+  height: auto;
+}
+
+/* Header and NAVIGATION menu */
+
+/* header.container {
+  margin-top: 36px;
+} */
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 0;
+}
+
+.site-logo {
+  display: inline-block;
+  width: 190px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #555252;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 36px 0;
+}
+
+.site-logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.site-navigation {
+  padding: 0;
+  margin: 0;
+  width: 920px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.site-navigation li {
+  display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 34px;
+}
+
+.site-navigation a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #0f0101;
+  line-height: 11px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #1abc9c;
+}
+
+/*
+nav {
+  text-transform: uppercase;
+  height: auto;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 190px;
+  float: left;
+}
+
+.logo a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #555252;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.logo a::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.main-menu {
+  width: 494px;
+  list-style: none;
+  height: auto;
+  overflow: hidden;
+  text-align: right;
+  margin-left: 190px;
+}
+
+.main-menu li {
+  float: right;
+}
+  
+.main-menu a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0f0101;
+  line-height: 11px;
+  letter-spacing: -0.02em;
+}
+
+.main-menu a:hover {
+  color: #1abc9c;
+} */
+  
