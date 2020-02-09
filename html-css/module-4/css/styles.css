@@ -169,12 +169,28 @@ nav {
   content: "\0024";
 }
 
+a > h3 {
+  color: rgb(255, 255, 255);
+}
+
 .features-list p {
   font-size: 18px;
   display: inline-block;
   width: 55px;
-  background-color: #8c8c8c; 
+  background-color: #323232; 
+  filter: opacity(0.44);
   text-align: center;
+}
+
+.features-list:hover h3 {
+  background-color: #1abc9c;
+  transition: all 0.2s;
+}
+
+.features-list:hover p {
+  background-color: #1ABC9C;
+  opacity: 0.5;
+  transition: all 0.2s;
 }
 
 /* BLOG SECTION */
@@ -199,6 +215,7 @@ nav {
 .blog-list {
   width: 350px;
   display: inline-block;
+  
   margin-right: 30px;
 }
 
@@ -245,4 +262,5 @@ nav {
   letter-spacing: -0.02em;
   background-color: #4ec6ab;
   padding: 13px 42px;
+  cursor: pointer;
 }
