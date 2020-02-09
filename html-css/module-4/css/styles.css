@@ -252,6 +252,7 @@ a > h3 {
   line-height: 26px;
   letter-spacing: -0.02em;
   background-color: #4ec6ab;
+  border-radius: 4px;
   padding: 13px 42px;
   cursor: pointer;
 }
