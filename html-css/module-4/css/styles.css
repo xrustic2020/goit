@@ -99,10 +99,21 @@ nav {
   
 /* Gallery section */
 
+.line-effect {
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  color: #515151;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .line-effect::after {
   content: "";
-  height: auto;
-  background-image: url(../img/line.jpg);
+  display: block;
+  height: 10px;
+  border-bottom: 7px solid #1abc9c;
 }
 
 .featured {
@@ -136,7 +147,7 @@ nav {
   background-color: #323232;
   display: inline-block;
   width: 200px;
-  padding: 4px 0 4px 13px;
+  padding-left: 13px;
 }
 
 .features-list p::before {
@@ -147,24 +158,6 @@ nav {
   font-size: 18px;
   display: inline-block;
   width: 55px;
-  background-color: #8c8c8c;
-  padding: 4px 0;
+  background-color: #8c8c8c; 
   text-align: center;
 }
-
-.handbag {
-  width: 255px;
-  height: 320px;
-  background-image: url(../img/handbag2.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.glasses {
-  width: 255px;
-  height: 320px;
-  background-image: url(../img/glasses.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-  
