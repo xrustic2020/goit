@@ -99,6 +99,12 @@ nav {
   
 /* Gallery section */
 
+.gallery {
+  margin-bottom: 104px;
+}
+
+      /* Line-Effect */
+
 .line-effect {
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
@@ -118,6 +124,8 @@ nav {
   background-repeat: no-repeat;
   background-position: center 80%;
 }
+
+/* Products Cards */
 
 .featured {
   list-style: none;
@@ -145,6 +153,10 @@ nav {
   margin-right: 0;
 }
 
+.features-list:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
 .features-list h3 {
   font-size: 18px;
   background-color: #323232;
@@ -163,4 +175,58 @@ nav {
   width: 55px;
   background-color: #8c8c8c; 
   text-align: center;
+}
+
+/* BLOG SECTION */
+
+.blog h2 {
+  color: #555252;
+  margin-top: 0;
+  margin-bottom: 73px;
+}
+
+/* BLOG ARTICLES */
+
+.blog {
+  margin-bottom: 500px;
+}
+
+.blog-articles {
+  list-style: none;
+  font-size: 0;
+}
+
+.blog-list {
+  width: 350px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.blog-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.blog-list h3 {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: rgb(85, 82, 82);
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin: 14px 0;
+}
+
+.blog-list h3:after {
+  content: "";
+  display: block;
+  border-top: 3px solid #4ec6ab;
+  width: 136px;
+}
+
+.blog-list p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(85, 82, 82);
+  line-height: 26px;
+  letter-spacing: -0.02em;
 }
