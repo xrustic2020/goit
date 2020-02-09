@@ -188,7 +188,7 @@ nav {
 /* BLOG ARTICLES */
 
 .blog {
-  margin-bottom: 500px;
+  margin-bottom: 82px;
 }
 
 .blog-articles {
@@ -213,14 +213,15 @@ nav {
   color: rgb(85, 82, 82);
   line-height: 26px;
   letter-spacing: -0.02em;
-  margin: 14px 0;
+  margin: 12px 0 22px;
 }
 
 .blog-list h3:after {
   content: "";
   display: block;
-  border-top: 3px solid #4ec6ab;
+  border-bottom: 3px solid #4ec6ab;
   width: 136px;
+  height: 10px;
 }
 
 .blog-list p {
@@ -229,4 +230,19 @@ nav {
   color: rgb(85, 82, 82);
   line-height: 26px;
   letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+/* BLOG Buttons */
+
+.blog-list button {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  background-color: #4ec6ab;
+  padding: 13px 42px;
 }
