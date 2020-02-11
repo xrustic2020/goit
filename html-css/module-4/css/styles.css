@@ -147,9 +147,13 @@ nav {
   margin-bottom: 0;
 }
 
+.features-container {
+  background-color: #323232;
+}
+
 .features-list h3 {
   font-size: 18px;
-  background-color: #323232;
+  /* background-color: #323232; */
   width: 200px;
   padding-left: 13px;
   float: left;
@@ -159,7 +163,7 @@ nav {
   content: "\0024";
 }
 
-a > h3 {
+h3 > a {
   color: rgb(255, 255, 255);
 }
 
@@ -217,7 +221,7 @@ a > h3 {
   color: rgb(85, 82, 82);
   line-height: 26px;
   letter-spacing: -0.02em;
-  margin: 12px 0 22px;
+  padding: 12px 0 22px;
 }
 
 .blog-list h3:after {
@@ -234,21 +238,24 @@ a > h3 {
   color: rgb(85, 82, 82);
   line-height: 26px;
   letter-spacing: -0.02em;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 /* BLOG Buttons */
 
 .blog-list button {
   border: none;
+  background-color: #4ec6ab;
+  border-radius: 4px;
+  padding: 13px 42px;
+  cursor: pointer;
+}
+button a {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: rgb(255, 255, 255);
   line-height: 26px;
   letter-spacing: -0.02em;
-  background-color: #4ec6ab;
-  border-radius: 4px;
-  padding: 13px 42px;
-  cursor: pointer;
+  text-decoration: none;
 }
