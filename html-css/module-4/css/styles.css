@@ -99,7 +99,7 @@ nav {
   text-transform: uppercase;
   line-height: 32px;
   text-align: center;
-  padding-bottom: 84px;
+  padding-bottom: 76px;
 }
 
 .line-effect::after {
@@ -151,10 +151,17 @@ nav {
   margin-bottom: 0;
 }
 
+.features-container {
+  height: auto;
+  overflow: hidden;
+}
+
 .features-list h3 {
   font-size: 18px;
   background-color: #323232;
   width: 200px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 13px;
   float: left;
 }
@@ -177,6 +184,8 @@ span {
   width: 55px;
   background-color: rgba(255, 255, 255, 0.44);
   color: #ffffff;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-align: center;
   float: right;
 }
@@ -250,7 +259,7 @@ span {
   border: none;
   background-color: #4ec6ab;
   border-radius: 4px;
-  padding: 13px 42px;
+  padding: 12px 42px;
   cursor: pointer;
 }
 
