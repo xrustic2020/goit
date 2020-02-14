@@ -3,6 +3,7 @@
 # Ignore files homework for module-1
 /module-1/*
 /module-3/*
+/module-4/*
 
 # Ignore Photoshop type file
 *.psd
