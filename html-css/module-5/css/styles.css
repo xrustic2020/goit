@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.menu .menu-item {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.submenu .submenu-item {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    list-style: none;
+    display: inline-block;
+}
+
+.submenu { 
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.menu-item:hover > .submenu { 
+    display: block; 
+}
+
+.submenu-item:hover {
+    background-color: lightblue;
+    color: grey;
+}
