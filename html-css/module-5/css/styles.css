@@ -160,6 +160,7 @@ aside {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  width: 740px;
 }
 
 .h2-container h2 {
@@ -182,3 +183,113 @@ aside {
   letter-spacing: -0.02em;
 }
   
+/* Section NEW COLLECTION */
+
+/* Line-Effect */
+
+.line-effect {
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  color: #515151;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+  padding-bottom: 76px;
+}
+
+.line-effect::after {
+  content: "";
+  display: block;
+  height: 48px;
+  background-image: url(../img/line.jpg);
+  background-repeat: no-repeat;
+  background-position: center 80%;
+}
+
+/* Products Cards */
+
+.featured {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list {
+  width: 255px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  background-color: #323232;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.features-list a > img {
+  background-color: #e9f0fd;
+}
+
+.features-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.features-list:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features-list:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
+.features-container {
+  height: auto;
+  overflow: hidden;
+  background-color: #323232;
+}
+
+.features-list h3 {
+  font-size: 18px;
+  background-color: inherit;
+  width: 200px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 13px;
+  float: left;
+}
+
+.features-list span::before {
+  content: "\0024";
+}
+
+h3 > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+span {
+  background-color: #ffffff;
+}
+
+.features-list span {
+  font-size: 18px;
+  width: 55px;
+  background-color: rgba(255, 255, 255, 0.44);
+  color: #ffffff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  float: right;
+}
+
+.features-list:hover {
+  background-color: #ffffff;
+}
+
+.features-list:hover .features-container {
+  background-color: #1abc9c;
+}
