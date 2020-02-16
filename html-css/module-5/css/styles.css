@@ -103,7 +103,7 @@ header nav {
 /* aside block */
 
 aside {
-    background-image: url(../img/backgorund.jpg);
+    background-image: url(../img/content-img/backgorund.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -185,6 +185,11 @@ aside {
   
 /* Section NEW COLLECTION */
 
+section {
+  background-color: #e9f0fd;
+  padding: 86px 0 100px;
+}
+
 /* Line-Effect */
 
 .line-effect {
@@ -193,8 +198,9 @@ aside {
   color: #515151;
   text-transform: uppercase;
   line-height: 32px;
+  letter-spacing: -0.02em;
   text-align: center;
-  padding-bottom: 76px;
+  padding-bottom: 86px;
 }
 
 .line-effect::after {
@@ -224,8 +230,8 @@ aside {
   letter-spacing: -0.02em;
   background-color: #323232;
   margin-right: 30px;
-  margin-bottom: 30px;
   float: left;
+  position: relative;
 }
 
 .features-list a > img {
@@ -292,4 +298,90 @@ span {
 
 .features-list:hover .features-container {
   background-color: #1abc9c;
+}
+
+/* Positions elements and hover effect */
+
+.featured-position {
+  /* display: none; */
+  background-color: rgba(255, 255, 255, 0.55);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 40px);
+}
+
+.black-block-position {
+  width: 235px;
+  height: 262px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.icon-block {
+  width: 168px;
+  height: 110px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.icon-pack {
+  list-style: none;
+}
+
+.icon-pack li {
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 9px;
+  border: 1px solid #ffffff;
+}
+
+.icon-pack li:last-child {
+  margin-right: 0;
+}
+
+.link-to-cart {
+  width: 168px;
+  background-color: #323232;
+  border: 1px solid #ffffff;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.link-to-cart img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* position hover effects */
+
+.icon-pack li:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+/* Site FOOTER */
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  background-color: #323232;
+  color: #fefefe;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.designed {
+  background-color: #323232;
+  color: #46bfa9;
 }
