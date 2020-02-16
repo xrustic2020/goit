@@ -303,7 +303,7 @@ span {
 /* Positions elements and hover effect */
 
 .featured-position {
-  /* display: none; */
+  display: none;
   background-color: rgba(255, 255, 255, 0.55);
   position: absolute;
   top: 0;
@@ -366,6 +366,10 @@ span {
 .icon-pack li:hover {
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
+}
+
+.features-list:hover .featured-position {
+  display: block;
 }
 
 /* Site FOOTER */
