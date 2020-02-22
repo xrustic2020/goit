@@ -23,6 +23,10 @@ img {
   clear: both;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Header and NAVIGATION menu */
 
 .container {
@@ -292,7 +296,7 @@ span {
 /* Positions elements and hover effect */
 
 .featured-position {
-  /* display: none; */
+  display: none;
   background-color: rgba(0, 0, 0, 0.55);
   background-clip: padding-box;
   border: 10px solid rgba(255, 255, 255, 0.55); 
@@ -349,28 +353,26 @@ button.like-btn {
   margin-right: 0;
 }
 
-.link-to-cart {
+.link-to-cart button {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
   width: 168px;
+  color: #ffffff;
   background-color: #323232;
   border: 1px solid #ffffff;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.link-to-cart a > img {
-  vertical-align: middle;
-  padding-left: 10px;
-  float: left;
-  background-color: #323232;
-}
-
-.link-to-cart a {
-  display: block;
   text-decoration: none;
-  color: #ffffff;
-  vertical-align: middle;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: 9px 0;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.link-to-cart img {
+  float: left;
+  padding-left: 10px;
 }
 
 /* position hover effects */
