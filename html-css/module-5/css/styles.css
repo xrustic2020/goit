@@ -228,6 +228,9 @@ section {
   background-color: #323232;
   margin-right: 30px;
   float: left;
+}
+
+.features-list .relative {
   position: relative;
 }
 
@@ -304,7 +307,7 @@ span {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 40px);
+  height: 100%;
 }
 
 .icon-block {
