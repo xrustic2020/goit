@@ -91,8 +91,9 @@ h1 > a {
 
 /* Section AMAZING SERVICES */
 
-section {
+section.amazing {
   padding-top: 46px;
+  padding-bottom: 50px;
 }
 
 .special-heading {
@@ -139,50 +140,72 @@ section {
 .services-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   width: 380px;
   height: 110px;
+  position: relative;
 }
 
 .services-list:nth-of-type(-n+3) {
   margin-bottom: 58px;
 }
 
-.services-block::before {
+.services-list::before {
   content: "";
-  display: inline-block;
-  width: 80px;
-  height: 32px;
-  background-image: url(../img/icon/photography.png);
+  display: block;
   background-repeat: no-repeat;
   background-position: center 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 32px;
 }
 
-/* .services-block {
-  display: inline-flex;
-  flex-direction: column;
-  width: 300px;
-} */
+ul .services-list:nth-child(1)::before {
+  background-image: url(../img/icon/photography.png); 
+}
+
+ul .services-list:nth-child(2)::before {
+  background-image: url(../img/icon/web-design.png); 
+}
+
+ul .services-list:nth-child(3)::before {
+  background-image: url(../img/icon/creativity.png); 
+}
+
+ul .services-list:nth-child(4)::before {
+  background-image: url(../img/icon/seo.png); 
+}
+
+ul .services-list:nth-child(5)::before {
+  background-image: url(../img/icon/css-html.png); 
+}
+
+ul .services-list:nth-child(6)::before {
+  background-image: url(../img/icon/digital.png); 
+}
 
 .services-list > h3 {
-  /* display: inline-block; */
-  /* vertical-align: top; */
   width: 300px;
-
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   text-transform: uppercase;
   color: #333333;
+  padding-bottom: 16px;
 }
 
 .services-list h3 + p {
-  /* display: inline-block; */
   width: 300px;
-
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
 }
+
+/* Section TEAM list */
+
+
 
