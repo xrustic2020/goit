@@ -77,6 +77,8 @@ h1 > a {
   border-bottom: 3px solid transparent;
 }
 
+/* HOVER effects for HEADER */
+
 .right-nav-menu li > a:hover {
   color: #f38181;
   transition: all 200ms linear 100ms;
@@ -85,5 +87,102 @@ h1 > a {
 .right-nav-menu li > a:hover::after {
   border-bottom: 3px solid #f38181;
   transition: all 200ms linear 100ms;
+}
+
+/* Section AMAZING SERVICES */
+
+section {
+  padding-top: 46px;
+}
+
+.special-heading {
+  color: #333333;
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+.kaushan-style {
+  display: block;
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: none;
+}
+
+.special-heading span:last-child {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 16px;
+}
+
+.special-heading span:last-child::after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  padding-top: 38px;
+  border-bottom: 3px solid #f38181;
+}
+
+/* Info CARDs services */
+
+.amazing-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 110px;
+}
+
+.services-list:nth-of-type(-n+3) {
+  margin-bottom: 58px;
+}
+
+.services-block::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  background-image: url(../img/icon/photography.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+/* .services-block {
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+} */
+
+.services-list > h3 {
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  width: 300px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.services-list h3 + p {
+  /* display: inline-block; */
+  width: 300px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
 }
 
