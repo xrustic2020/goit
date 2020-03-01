@@ -27,7 +27,7 @@ img {
 /* link FONTS */
 
 @font-face {
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
   font-style: normal;
   font-weight: 400;
   src: local('Oleo Script'), local('OleoScript-Regular'),
@@ -54,13 +54,23 @@ img {
 }
 
 @font-face {
-  font-family: 'PT Serif';
+  font-family: "PT Serif";
   font-style: italic;
   font-weight: 400;
   src: local('PT Serif Italic'), local('PTSerif-Italic'),
     url('../fonts/pt-serif-v11-latin-italic.woff2') format('woff2'),
     url('../fonts/pt-serif-v11-latin-italic.woff') format('woff');
 }
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
+}
+
 
 
 /* HEADER and NAVIGATION menu */
@@ -106,6 +116,7 @@ header nav {
 
 .services {
   padding-top: 58px;
+  padding-bottom: 102px;
 }
 
 .services h2 {
@@ -118,7 +129,7 @@ header nav {
   text-align: center;
 }
 
-.services p {
+.services h2 + p {
   font-family: "PT Serif";
   font-size: 16px;
   line-height: 19px;
@@ -127,7 +138,62 @@ header nav {
   padding-bottom: 52px;
 }
 
-/* before ellements and border */
+.services-list li::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 26px auto 0;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+}
 
+.services-list li:first-child::before {
+  background-image: url(../img/e-commerce.png);
+}
 
+.services-list li:nth-child(2)::before {
+  background-image: url(../img/responsive-web.png);
+}
 
+.services-list li:last-child::before {
+  background-image: url(../img/security.png);
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list li {
+  width: 290px;
+}
+
+.services-list h3 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 75px;
+  letter-spacing: -0.025em;
+  color: #222222;
+  text-align: center;
+}
+
+.services-list p {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  line-height: 24px; /* not photoshop styles (17px) */
+  letter-spacing: -0.025em;
+  color: #777777;
+  text-align: center;
+}
+
+/* Section CONTACT US */
+
+section.contact-us {
+  width: 100%;
+  background-color: #222222;
+}
