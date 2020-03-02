@@ -30,8 +30,8 @@
 <!-- Section SERVICES -->
 
     <section class="container services">
-        <h2>Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <h2 class="section-heading">Services</h2>
+        <p class="heading-paragraph">Lorem ipsum dolor sit amet consectetur.</p>
 
         <ul class="services-list">
             <li>
@@ -52,8 +52,30 @@
     </section>
 
     <section class="contact-us">
-        <h2>Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="container">
+            <h2 class="section-heading">Contact us</h2>
+            <p class="heading-paragraph">Lorem ipsum dolor sit amet consectetur.</p>
+
+            <form action="#" method="post">
+                <table class="message-table-form">
+                    <tr>
+                      <td><input type="text" name="user-name" placeholder="Your Name *" required></td>
+                      <td rowspan="3"><textarea name="user-message" id="" cols="62" rows="3" placeholder="Your Message *" required></textarea></td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="email" name="user-email" id="" placeholder="Your E-mail *" required></td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="text" name="subject" placeholder="Subject"></td>
+                    </tr>
+                </table>
+
+                <input type="submit" value="Send message">
+
+            </form>
+        </div>
     </section>
 
 </main>
