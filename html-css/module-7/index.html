@@ -57,23 +57,22 @@
             <p class="heading-paragraph">Lorem ipsum dolor sit amet consectetur.</p>
 
             <form action="#" method="post">
-                <table class="message-table-form">
-                    <tr>
-                      <td><input type="text" name="user-name" placeholder="Your Name *" required></td>
-                      <td rowspan="3"><textarea name="user-message" cols="62" rows="3" placeholder="Your Message *" required></textarea></td>
-                    </tr>
+                <ul class="message-table-form">
+                    <li>
+                        <input type="text" name="user-name" placeholder="Your Name *" required>
+                    </li>           
+                    <li>
+                        <input type="email" name="user-email" placeholder="Your E-mail *" required>
+                    </li>
+                    <li>
+                        <input type="text" name="subject" placeholder="Subject">
+                    </li>
+                    <li>
+                        <textarea name="user-message" cols="62" rows="3" placeholder="Your Message *" required></textarea>
+                    </li>
+                </ul>
 
-                    <tr>
-                      <td><input type="email" name="user-email" placeholder="Your E-mail *" required></td>
-                    </tr>
-
-                    <tr>
-                      <td><input type="text" name="subject" placeholder="Subject"></td>
-                    </tr>
-                </table>
-
-                <input type="submit" value="Send message">
-
+                    <input type="submit" value="Send message">
             </form>
         </div>
     </section>
