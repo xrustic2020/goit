@@ -23,20 +23,33 @@ img {
 
 .site-header {
     width: 100%;   
+    background-image: url(../img/backgrounds/command-320.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 540px;
 }
 
 .nav-container {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 40%;
+    padding: 20px 0;
 }
 
 .site-logo {
     text-align: center;
+    font-size: 20px;
 }
 
 .site-logo > a {
     display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
     text-decoration: none;
+    color: #ffffff;
 }
 
 .login-navigation {
@@ -45,9 +58,144 @@ img {
     list-style: none;
 }
 
+.login-navigation li {
+    padding: 8px 16px;
+}
+
+.login-navigation a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login-navigation li:last-child {
+    border: 2px solid #ffffff;
+    border-radius: 19px;
+}
+
 .find-suggestion {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.find-suggestion h2 {
+    padding-bottom: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.find-suggestion p {
+    width: 68%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.find-suggestion button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 12px;
+    width: 87.5%;
+    border: none;
+    background-color: #ff4e50;
+    border-radius: 21px;
+}
+
+/* Section MEET Partner */
+
+.meet-partner {
+    text-align: center;
+}
+
+.meet-partner h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    padding-top: 66px;
+    padding-bottom: 20px;
+}
+
+.partner-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partner-list li {
+    width: 222px;
+}
+
+.position-container {
+    width: 121px;
+    height: 121px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.position-container > img {
+    border: 4px solid #ffffff;;
+}
+
+.hidden {
+    position: absolute;
+    top: 100%; left: 100%; 
+    transform: translate(-100%, -100%);
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+}
+
+.partner-list li:nth-child(1) .hidden {
+    background-image: url(../img/icons/bradley-tv.png);
+    background-color: #ff4e50;
+}
+
+.partner-list li:nth-child(2) .hidden {
+    background-image: url(../img/icons/lucas-colbpng.png);
+    background-color: #ffa507;
+}
+
+.partner-list li:nth-child(3) .hidden {
+    background-image: url(../img/icons/heather-tea.png);
+    background-color: #1cd7ad;
+}
+
+.partner-list li:nth-child(4) .hidden {
+    background-image: url(../img/icons/bradley-telegram.png);
+    background-color: #4e73db;
+}
+
+.partner-list h3 {
+    padding: 16px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.partner-list p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    padding-bottom: 24px;
+}
