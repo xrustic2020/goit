@@ -199,3 +199,16 @@ img {
     color: #666666;
     padding-bottom: 24px;
 }
+
+.meet-partner button {
+    width: 87.5%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #ffffff;
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    padding: 10px 0;
+    margin-bottom: 58px;
+    border-radius: 20px;
+}
