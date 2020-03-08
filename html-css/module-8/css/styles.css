@@ -83,6 +83,7 @@ img {
 }
 
 .find-suggestion h2 {
+    width: 91%;
     padding-bottom: 18px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -108,7 +109,7 @@ img {
     line-height: 17px;
     color: #ffffff;
     padding: 12px;
-    width: 87.5%;
+    width: 280px;
     border: none;
     background-color: #ff4e50;
     border-radius: 21px;
@@ -118,6 +119,8 @@ img {
 
 .meet-partner {
     text-align: center;
+    /* width: 236px;
+    margin: 0 auto; */
 }
 
 .meet-partner h2 {
@@ -137,7 +140,7 @@ img {
 }
 
 .partner-list li {
-    width: 222px;
+    width: 236px;
 }
 
 .position-container {
@@ -201,7 +204,7 @@ img {
 }
 
 .meet-partner button {
-    width: 87.5%;
+    width: 280px;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 17px;
@@ -211,4 +214,54 @@ img {
     padding: 10px 0;
     margin-bottom: 58px;
     border-radius: 20px;
+}
+
+/* MEDIA Queries for RESPONSIVE */
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .site-header {
+        background-image: url(../img/backgrounds/command-768.jpg);
+        height: 700px;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 38px 50px 150px;
+        align-items: center;
+    }
+
+    .find-suggestion h2 {
+        width: 66%;
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .find-suggestion p {
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 32px;
+    }
+
+    .find-suggestion button {
+        width: 240px;
+    }
+
+    .meet-partner {
+        width: 532px;
+        margin: 0 auto;
+    }
+
+    .meet-partner h2 {
+        padding-bottom: 30px;
+    }
+    
+    .partner-list {
+        justify-content: space-around;
+    }
+
+    .partner-list li {
+        margin-bottom: 20px;
+    }
 }
