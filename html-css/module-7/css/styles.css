@@ -249,12 +249,12 @@ input[name="subject"] {
   color: #bbbbbb;
 }
 
-[required]:valid {
-  outline: 1px solid rgb(0, 255, 0);
+[required]:active [required]:valid {
+  outline: 3px solid rgb(0, 255, 0);
 }
 
-[required]:invalid {
-  outline: 1px solid rgb(255, 0, 0);
+[required]:active [required]:invalid {
+  outline: 3px solid rgb(255, 0, 0);
 }
 
 input[type="submit"] {

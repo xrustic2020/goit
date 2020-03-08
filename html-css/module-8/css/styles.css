@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER and NAVIGATION Menu */
+
+.site-header {
+    width: 100%;   
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.site-logo {
+    text-align: center;
+}
+
+.site-logo > a {
+    display: block;
+    text-decoration: none;
+}
+
+.login-navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.find-suggestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
