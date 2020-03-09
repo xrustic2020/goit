@@ -83,7 +83,7 @@ img {
 }
 
 .find-suggestion h2 {
-    width: 91%;
+    width: 292px;
     padding-bottom: 18px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -135,8 +135,8 @@ img {
 .partner-list {
     list-style: none;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .partner-list li {
@@ -218,7 +218,32 @@ img {
 
 /* MEDIA Queries for RESPONSIVE */
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 500px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 38px 50px 150px;
+        align-items: center;
+    }
+    
+    .partner-list {
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .partner-list li:nth-child(2n+1) {
+        margin-right: 20px;
+    }
+
+    .find-suggestion h2 {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .site-header {
         background-image: url(../img/backgrounds/command-768.jpg);
         height: 700px;
@@ -233,7 +258,7 @@ img {
     }
 
     .find-suggestion h2 {
-        width: 66%;
+        width: 620px;
         font-size: 52px;
         line-height: 62px;
     }
@@ -256,12 +281,65 @@ img {
     .meet-partner h2 {
         padding-bottom: 30px;
     }
-    
+
     .partner-list {
-        justify-content: space-around;
+        flex-flow: row wrap;
     }
 
     .partner-list li {
         margin-bottom: 20px;
+    }
+
+    .partner-list li:nth-child(2n+1) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .nav-container,
+    .find-suggestion {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .nav-container {
+        padding: 38px 0 150px;
+    }
+
+    .meet-partner {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .partner-list {
+        width: auto;
+    }
+
+    .partner-list li {
+        margin-right: 20px;
+    }
+
+    .partner-list li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .site-header {
+        background-image: url(../img/backgrounds/command-1200.jpg);
+        height: 700px;
+    }
+
+    .meet-partner {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .partner-list li:nth-child(n) {
+        margin-right: 0;
+    }
+
+    .partner-list {
+        justify-content: space-around;
     }
 }
