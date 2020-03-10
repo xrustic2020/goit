@@ -249,11 +249,11 @@ input[name="subject"] {
   color: #bbbbbb;
 }
 
-[required]:active [required]:valid {
+[required]:valid {
   outline: 3px solid rgb(0, 255, 0);
 }
 
-[required]:active [required]:invalid {
+[required]:focus:invalid {
   outline: 3px solid rgb(255, 0, 0);
 }
 
