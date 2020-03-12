@@ -21,12 +21,18 @@ img {
 
 /* HEADER and NAVIGATION Menu */
 
-.site-header {
-    width: 100%;   
+.background-container {
     background-image: url(../img/backgrounds/command-320.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-container {
+    width: 292px;
+    max-width: 940px;
     height: 540px;
+    margin: 0 auto;
 }
 
 .nav-container {
@@ -118,9 +124,8 @@ img {
 /* Section MEET Partner */
 
 .meet-partner {
+    min-width: 320px;
     text-align: center;
-    /* width: 236px;
-    margin: 0 auto; */
 }
 
 .meet-partner h2 {
@@ -128,61 +133,62 @@ img {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
-    padding-top: 66px;
-    padding-bottom: 20px;
+    padding: 66px 25px 20px;
 }
 
 .partner-list {
+    width: 236px;
+    margin: 0 auto;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.partner-list li {
-    width: 236px;
-}
-
-.position-container {
-    width: 121px;
-    height: 121px;
+.avatar {
+    width: 129px;
+    height: 129px;
     margin: 0 auto;
     position: relative;
 }
 
-.position-container > img {
-    border: 4px solid #ffffff;;
-}
-
-.hidden {
-    position: absolute;
-    top: 100%; left: 100%; 
-    transform: translate(-100%, -100%);
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-position: center;
+.avatar img {
     border: 4px solid #ffffff;
     border-radius: 50%;
 }
 
-.partner-list li:nth-child(1) .hidden {
+.avatar::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 100%; left: 100%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+.partner-list li:nth-child(1) .avatar::before {
     background-image: url(../img/icons/bradley-tv.png);
     background-color: #ff4e50;
 }
 
-.partner-list li:nth-child(2) .hidden {
+.partner-list li:nth-child(2) .avatar::before {
     background-image: url(../img/icons/lucas-colbpng.png);
     background-color: #ffa507;
 }
 
-.partner-list li:nth-child(3) .hidden {
+.partner-list li:nth-child(3) .avatar::before {
     background-image: url(../img/icons/heather-tea.png);
     background-color: #1cd7ad;
 }
 
-.partner-list li:nth-child(4) .hidden {
+.partner-list li:nth-child(4) .avatar::before {
     background-image: url(../img/icons/bradley-telegram.png);
     background-color: #4e73db;
 }
@@ -200,7 +206,7 @@ img {
     font-size: 14px;
     line-height: 17px;
     color: #666666;
-    padding-bottom: 24px;
+    padding: 0 10px 24px;
 }
 
 .meet-partner button {
@@ -214,132 +220,4 @@ img {
     padding: 10px 0;
     margin-bottom: 58px;
     border-radius: 20px;
-}
-
-/* MEDIA Queries for RESPONSIVE */
-
-@media screen and (min-width: 500px) {
-    .nav-container {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        padding: 38px 50px 150px;
-        align-items: center;
-    }
-    
-    .partner-list {
-        flex-flow: row wrap;
-        justify-content: center;
-        width: 500px;
-        margin: 0 auto;
-    }
-
-    .partner-list li:nth-child(2n+1) {
-        margin-right: 20px;
-    }
-
-    .find-suggestion h2 {
-        width: 350px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .site-header {
-        background-image: url(../img/backgrounds/command-768.jpg);
-        height: 700px;
-    }
-
-    .nav-container {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        padding: 38px 50px 150px;
-        align-items: center;
-    }
-
-    .find-suggestion h2 {
-        width: 620px;
-        font-size: 52px;
-        line-height: 62px;
-    }
-
-    .find-suggestion p {
-        font-size: 24px;
-        line-height: 29px;
-        padding-bottom: 32px;
-    }
-
-    .find-suggestion button {
-        width: 240px;
-    }
-
-    .meet-partner {
-        width: 532px;
-        margin: 0 auto;
-    }
-
-    .meet-partner h2 {
-        padding-bottom: 30px;
-    }
-
-    .partner-list {
-        flex-flow: row wrap;
-    }
-
-    .partner-list li {
-        margin-bottom: 20px;
-    }
-
-    .partner-list li:nth-child(2n+1) {
-        margin-right: 20px;
-    }
-}
-
-@media screen and (min-width: 960px) {
-    .nav-container,
-    .find-suggestion {
-        width: 65%;
-        margin: 0 auto;
-    }
-
-    .nav-container {
-        padding: 38px 0 150px;
-    }
-
-    .meet-partner {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .partner-list {
-        width: auto;
-    }
-
-    .partner-list li {
-        margin-right: 20px;
-    }
-
-    .partner-list li:nth-child(3n) {
-        margin-right: 0;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .site-header {
-        background-image: url(../img/backgrounds/command-1200.jpg);
-        height: 700px;
-    }
-
-    .meet-partner {
-        width: 60%;
-        margin: 0 auto;
-    }
-    
-    .partner-list li:nth-child(n) {
-        margin-right: 0;
-    }
-
-    .partner-list {
-        justify-content: space-around;
-    }
 }

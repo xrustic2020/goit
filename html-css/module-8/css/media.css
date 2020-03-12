@@ -1,0 +1,89 @@
+/* MEDIA Queries for RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    .background-container {
+        background-image: url(../img/backgrounds/command-768.jpg);
+    }
+    
+    .header-container {
+        width: 85.93%;
+        max-width: 940px;
+        height: 700px;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 38px 0 150px;
+        align-items: center;
+    }
+
+    .find-suggestion h2 {
+        width: 620px;
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .find-suggestion p {
+        width: 100%;
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 32px;
+    }
+
+    .find-suggestion button {
+        width: 240px;
+    }
+
+    .meet-partner {
+        width: 532px;
+        margin: 0 auto;
+    }
+
+    .meet-partner h2 {
+        padding-bottom: 30px;
+    }
+
+    .partner-list {
+        width: 100%;
+        max-height: 600px;
+        flex-flow: column wrap;
+    }
+
+    .partner-list li {
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
+    .partner-list li:nth-child(n+3) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .background-container {
+        background-image: url(../img/backgrounds/command-1200.jpg);
+        background-position: center 0;
+    }
+
+    .meet-partner {
+        width: 940px;
+    }
+    
+    .partner-list li:nth-child(n) {
+        margin-right: 0;
+    }
+
+    .partner-list {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .background-container {
+        background-size: 100% auto;
+    }
+}
