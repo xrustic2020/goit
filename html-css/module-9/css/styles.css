@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER and NAVIGATION Menu */
+
+.header-nav header {
+    min-height: 540px;
+}
+
+.header-nav {
+    min-height: 540px;
+    background-image: url(../img/backgrounds/command-320.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-navigation {
+    height: 210px;
+}
+
+.site-logo {
+    text-align: center;
+}
+
+.site-logo > a {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login-navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.login-navigation li {
+    padding: 8px 16px;
+}
+
+.login-navigation a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login-navigation li:last-child {
+    border: 2px solid #ffffff;
+    border-radius: 22px;
+}
+
+.find-suggestion-h2 {
+    width: 292px;
+    padding-bottom: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.find-suggestion-p {
+    width: 75%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.find-suggestion-button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 12px;
+    width: 280px;
+    border: none;
+    background-color: #ff4e50;
+    border-radius: 21px;
+}
+
+/* Section MEET Partner */
+
