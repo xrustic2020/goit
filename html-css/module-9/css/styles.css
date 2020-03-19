@@ -21,16 +21,16 @@ img {
 
 /* HEADER and NAVIGATION Menu */
 
-.header-nav header {
-    min-height: 540px;
-}
-
 .header-nav {
-    min-height: 540px;
+    height: 540px;
     background-image: url(../img/backgrounds/command-320.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.header-nav .container {
+    height: 100%;
 }
 
 .logo-navigation {
@@ -38,6 +38,7 @@ img {
 }
 
 .site-logo {
+    margin: 0;
     text-align: center;
 }
 
@@ -52,6 +53,7 @@ img {
 }
 
 .login-navigation {
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -110,3 +112,94 @@ img {
 
 /* Section MEET Partner */
 
+.meet-partner-h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    padding: 66px 25px 20px;
+    text-align: center;
+}
+
+.partner-list {
+    list-style: none;
+    text-align: center;
+}
+
+.avatar {
+    width: 129px;
+    height: 129px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.avatar img {
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.avatar::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 100%; left: 100%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+.partner-list li:nth-child(1) .avatar::before {
+    background-image: url(../img/icons/bradley-tv.png);
+    background-color: #ff4e50;
+}
+
+.partner-list li:nth-child(2) .avatar::before {
+    background-image: url(../img/icons/lucas-colbpng.png);
+    background-color: #ffa507;
+}
+
+.partner-list li:nth-child(3) .avatar::before {
+    background-image: url(../img/icons/heather-tea.png);
+    background-color: #1cd7ad;
+}
+
+.partner-list li:nth-child(4) .avatar::before {
+    background-image: url(../img/icons/bradley-telegram.png);
+    background-color: #4e73db;
+}
+
+.partner-list h3 {
+    padding: 16px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.partner-list p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    padding: 0 10px 24px;
+}
+
+.meet-partner-button {
+    width: 280px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #ffffff;
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    padding: 10px 0;
+    margin-bottom: 58px;
+    border-radius: 20px;
+}

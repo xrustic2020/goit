@@ -1,0 +1,47 @@
+/* MEDIA Queries for RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        background-image: url(../img/backgrounds/command-768.jpg);
+        height: 700px;
+    }
+
+    .logo-navigation {
+        padding-top: 2rem;
+        height: auto;
+    }
+
+    .baner {
+        margin: auto;
+    }
+
+    .find-suggestion-h2 {
+        width: 620px;
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .find-suggestion-p {
+        width: 100%;
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 32px;
+    }
+
+    .find-suggestion-button {
+        width: 240px;
+    }
+}
+
+ @media screen and (min-width: 1200px) {
+    .header-nav {
+        background-image: url(../img/backgrounds/command-1200.jpg);
+        background-position: center 0;
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+    .header-nav {
+        background-size: 100% auto;
+    }
+}
