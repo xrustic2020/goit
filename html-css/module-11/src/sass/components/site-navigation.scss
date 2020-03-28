@@ -1,0 +1,41 @@
+.site-navigation {
+  width: 620px;
+  height: 92px;
+  @include flex-position(space-between, center);
+  @extend %list;
+
+  &__link {
+    @extend %base-font-line;
+    @extend %links;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 10px;
+      border-bottom: 3px solid transparent;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $white-color;
+  }
+
+  &__item:hover .site-navigation__link {
+    color: $yellow-akcent;
+    @extend %trans-animation;
+
+    &:hover .site-navigation__img {
+      fill: $yellow-akcent;
+      @extend %trans-animation;
+    }
+  }
+}
+
+.site-navigation__item:hover .site-navigation__link::after {
+  border-bottom: 3px solid $yellow-akcent;
+  @extend %trans-animation;
+}
+

@@ -1,0 +1,15 @@
+.info-team {
+  @include flex-position(space-between, normal);
+  @extend %list;
+
+  &__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__appointment {
+    text-align: center;
+    font-style: italic;
+  }
+}
+

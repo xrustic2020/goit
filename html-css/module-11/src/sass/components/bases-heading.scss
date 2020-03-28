@@ -1,0 +1,9 @@
+.bases-heading {
+  font-family: $montserrat-font;
+  font-weight: 500;
+  @extend %base-font-line;
+  text-transform: uppercase;
+  color: $dark-color;
+  width: 300px;
+  padding-bottom: 10px;
+}

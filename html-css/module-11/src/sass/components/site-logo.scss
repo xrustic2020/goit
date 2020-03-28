@@ -1,0 +1,9 @@
+.site-logo {
+  margin: 0;
+
+    &__link {
+    text-transform: none;
+    @extend %30-font-line;
+    @extend %links;
+  }
+}

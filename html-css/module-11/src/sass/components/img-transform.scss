@@ -1,0 +1,19 @@
+.img-transform {
+  position: relative;
+  background-color: $light-blue-color;
+  z-index: 1;
+  margin-bottom: 30px;
+
+  &:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-10px, -10px);
+    @extend %trans-animation;
+  }
+
+  &:hover .info-team__avatar {
+    transform: translate(-10px, -10px);
+    @extend %trans-animation;
+  }
+}
+

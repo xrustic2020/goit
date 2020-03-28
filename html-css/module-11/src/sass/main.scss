@@ -1,0 +1,32 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixin';
+@import 'normalize';
+@import 'base';
+
+/* Components */
+
+@import 'components/container';
+@import 'components/input';
+@import 'components/bases-heading';
+@import 'components/bases-paragraf';
+@import 'components/background';
+@import 'components/header-nav';
+@import 'components/site-logo';
+@import 'components/site-navigation';
+@import 'components/baner';
+@import 'components/special-heading';
+@import 'components/baner-button';
+@import 'components/amazing';
+@import 'components/features';
+@import 'components/team';
+@import 'components/info-team';
+@import 'components/img-transform';
+@import 'components/overlay';
+@import 'components/icon-block';
+@import 'components\/footer';
+@import 'components/subscribe-form';

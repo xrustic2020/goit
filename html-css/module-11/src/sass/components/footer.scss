@@ -1,0 +1,15 @@
+.footer {
+  @include flex-position(space-between, center);
+  height: 62px;
+  border-top: 1px solid #e5e5e5;
+
+  &__copyrite {
+    font-family: $montserrat-font;
+    @extend %base-font-line;
+    color: $dark-color;
+  }
+
+  &__author {
+    color: $pink-color;
+  }
+}

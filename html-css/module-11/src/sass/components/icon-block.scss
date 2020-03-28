@@ -1,0 +1,35 @@
+.icon-block {
+  @include flex-position(normal, center);
+  @extend %list;
+
+  &__item {
+    width: 55px;
+    height: 55px;
+    border-right: 1px solid $pink-color;
+  }
+
+  &__button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: $yellow-akcent;
+    @include flex-position(center, center);
+
+    &:hover {
+      background-color: $pink-color;
+      @extend %trans-animation;
+    }
+
+    &:hover .icon-block__img {
+      fill: $white-color;
+      @extend %trans-animation;
+    }
+  }
+
+  &__img {
+    width: 25px;
+    height: 25px;
+    fill: $pink-color;
+  }
+}

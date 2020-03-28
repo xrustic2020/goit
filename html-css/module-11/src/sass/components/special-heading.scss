@@ -1,0 +1,49 @@
+.special-heading {
+  color: $dark-color;
+  text-align: center;
+  padding-bottom: 64px;
+
+  &--light {
+    padding-top: 130px;
+    color: $white-color;
+    padding-bottom: 0;
+  }
+
+  &__kaushan {
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: none;
+
+    &--light {
+      font-size: 72px;
+      line-height: 86px;
+    }
+  }
+
+  &__montserrat {
+    display: block;
+    font-family: $montserrat-font;
+    @extend %30-font-line;
+    text-transform: uppercase;
+    padding-top: 16px;
+    margin: 0 auto;
+
+    &--light {
+      width: 840px;
+      font-size: 150px;
+      line-height: 140px;
+      padding: 38px 0 105px;
+      letter-spacing: 0;
+    }
+
+    &--line::after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin: 0 auto;
+      padding-top: 34px;
+      border-bottom: 3px solid $pink-color;
+    }
+  }
+}
