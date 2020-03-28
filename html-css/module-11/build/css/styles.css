@@ -363,14 +363,14 @@ input {
   color: #999999; }
 
 .background {
-  background-image: url(../../images/background/eagle.jpg);
+  background-image: url(../images/background/eagle.jpg);
   background-position: center;
   background-size: cover;
   height: 1000px;
   font-family: "Montserrat", sans-serif; }
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .background .background {
-      background-image: url(../../images/background/eagle@2x.jpg); } }
+      background-image: url(../images/background/eagle@2x.jpg); } }
 
 .header-nav {
   display: flex;
