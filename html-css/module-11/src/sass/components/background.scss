@@ -1,5 +1,5 @@
 .background {
-  background-image: url(../../images/background/eagle.jpg);
+  background-image: url(../images/background/eagle.jpg);
   background-position: center;
   background-size: cover;
   height: 1000px;
@@ -7,7 +7,7 @@
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .background {
-      background-image: url(../../images/background/eagle@2x.jpg);
+      background-image: url(../images/background/eagle@2x.jpg);
     }
   }
 }
